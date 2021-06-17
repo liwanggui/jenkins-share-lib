@@ -19,7 +19,7 @@ def get(url){
  * @param is_json 请求参数类型是否为 json 格式
  * @return String
  */
-def http_post(url, data = null, is_json = false) {
+def post(url, data = null, is_json = false) {
     def conn = new URL(url).openConnection()
     conn.setRequestMethod("POST")
     if (data) {
