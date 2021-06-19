@@ -1,7 +1,9 @@
 @Library('jenkins-share-lib') _
 
+import org.devop.HTTP
+
 // 创建 HTTP 类实例
-def http = new org.devops.HTTP()
+def http = new HTTP()
 
 pipeline {
 	agent any
